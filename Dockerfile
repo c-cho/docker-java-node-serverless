@@ -6,6 +6,7 @@ FROM node:6.3.0
 
 ENV DEBIAN_FRONTEND noninteractive
 
+RUN apt-get install -y software-properties-common python-software-properties
 RUN add-apt-repository ppa:openjdk-r/ppa
 RUN apt-get update
 RUN apt-get install -y apt-utils
