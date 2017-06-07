@@ -19,7 +19,7 @@ RUN apt-get install -y maven
 RUN apt-get install -y curl
 RUN curl -sL https://deb.nodesource.com/setup_6.x | bash
 RUN apt-get install -y nodejs
-RUN apt-get install -y npm
+# RUN apt-get install -y npm
 RUN npm install -g serverless
 RUN apt-get install -y git
 RUN apt-get install -y openssh-server
