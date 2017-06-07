@@ -7,11 +7,13 @@ FROM openjdk:8-jdk
 ENV DEBIAN_FRONTEND noninteractive
 
 RUN apt-get update
+RUN apt-get install -y apt-utils
 RUN apt-get install -y nodejs
-RUN apt-get install -y build-essential
+RUN apt-get install -y npm
+RUN npm install -g serverless
+# RUN apt-get install -y build-essential
 RUN apt-get install -y maven
 RUN apt-get install -y git
 RUN apt-get install -y openssh-server
-RUN npm install -g serverless
 
 CMD [ "node" ]
