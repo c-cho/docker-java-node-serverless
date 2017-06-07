@@ -12,7 +12,7 @@ ENV DEBIAN_FRONTEND noninteractive
 # RUN apt-get install -y build-essential
 # RUN apt-add-repository ppa:andrei-pozolotin/maven3
 # RUN apt-get install -y maven3
-RUN apt-get install -y apt-utils
+# RUN apt-get install -y apt-utils
 RUN apt-get update
 RUN apt-get install -y default-jdk
 RUN apt-get install -y maven
