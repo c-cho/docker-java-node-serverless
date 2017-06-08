@@ -8,5 +8,8 @@ This is a dockerfile used for circleci 2.0.
 - serverless framework
 - Japanese environment
 
+## Use it
+`docker pull choasia/java-node-serverless` **OR** [Docker Hub](https://hub.docker.com/r/choasia/java-node-serverless/)
+
 ## License
 Apache 2.0
